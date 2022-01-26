@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+svg {
+  font-size: 40px;
+  color: #0278FC;
+  position: relative;
+  top: 54px;
+  right: 334px;
+  z-index: 1;
+}
