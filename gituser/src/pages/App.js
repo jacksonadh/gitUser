@@ -1,5 +1,5 @@
 import Body from '../pages/body/style';
-import Profile from '../components/profile/index'
+import Profile from '../pages/sectionProfile/index'
 import Header from '../pages/header/index'
 import { ThemeContextProvider } from '../provider/themeContext';
 

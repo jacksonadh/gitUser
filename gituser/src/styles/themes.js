@@ -15,7 +15,7 @@ export const lightTheme = {
   backgroundPrimary: "#f5f8ff",
   backgroundSecondary: "#FEFEFE",
   fontTitle: "#2c2f3e",
-  fontSubtitle: "#b5bcc4",
+  fontSubtitle: "#6e7378",
   button: "#0278FC",
   colorButton: "#D9E5F1",
   shadow: "#b5bcc4"

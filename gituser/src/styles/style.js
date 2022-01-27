@@ -21,7 +21,8 @@ const Info = styled.span`
 
   background: ${props => props.theme.backgroundPrimary};
   color: ${props => props.theme.fontSubtitle};
-  margin: 20px 50px;
+  width: 70%;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   `;

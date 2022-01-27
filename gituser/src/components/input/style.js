@@ -6,7 +6,7 @@ const Search = styled.input`
   border-radius: 10px;
   color: ${props => props.theme.fontTitle};
   background: ${props => props.theme.backgroundSecondary};
-  width: 55vw;
+  width: 40vw;
   padding: 25px 130px 25px 60px;
   box-shadow: 5px 5px 5px ${props => props.theme.shadow};
   
