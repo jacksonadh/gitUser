@@ -10,11 +10,3 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
-svg {
-  font-size: 40px;
-  color: #0278FC;
-  position: relative;
-  top: 54px;
-  right: 334px;
-  z-index: 1;
-}

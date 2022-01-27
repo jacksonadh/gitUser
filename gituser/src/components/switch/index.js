@@ -1,14 +1,16 @@
 import { useThemeContext } from "../../provider/themeContext";
+import Slider from "./style";
+import { BiSun, BiMoon } from 'react-icons/bi'
 
 export default function Switch() {
   const { changeTheme } = useThemeContext();
+  const icon = localStorage.getItem('theme') === "light" ? <BiMoon /> : <BiSun />
   return (
-    <>
-      <label className="switch">
-        <input type="checkbox" onChange={changeTheme} />
-        <span className="slider round" ></span>
-      </label>
-    </>
+
+    <Slider onClick={changeTheme}>
+      {icon}
+    </Slider>
+
 
   )
 }

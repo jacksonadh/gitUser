@@ -4,7 +4,7 @@ const Div = styled.div`
   width: 55vw;
   display: flex;
   flex-direction: column;
-
+  margin-top: 25px;
   border-radius: 10px;
 
   background: ${props => props.theme.backgroundSecondary};

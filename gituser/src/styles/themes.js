@@ -1,4 +1,6 @@
+
 export const darkTheme = {
+  mode: "Light",
   backgroundPrimary: "#141c2f",
   backgroundSecondary: "#1f2a48",
   fontTitle: "#fbffff",
@@ -9,6 +11,7 @@ export const darkTheme = {
 }
 
 export const lightTheme = {
+  mode: "Dark",
   backgroundPrimary: "#f5f8ff",
   backgroundSecondary: "#FEFEFE",
   fontTitle: "#2c2f3e",
