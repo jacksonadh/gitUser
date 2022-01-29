@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+
+const ResetCSS = createGlobalStyle`
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
 * {
@@ -8,5 +12,10 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
+  background: ${props => props.theme.backgroundPrimary};
 }
 
+
+`;
+
+export { ResetCSS };

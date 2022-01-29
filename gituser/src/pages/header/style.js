@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const DivHeader = styled.div`
-  margin-top: 10%;
+  margin-top: 2%;
   width: 40vw;
   display: flex;
   justify-content: space-between;

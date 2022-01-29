@@ -39,9 +39,10 @@ export default function Profile() {
           <li><p><BiMap />  Location</p></li>
           <li><p><FiTwitter />  Twitter</p></li>
           <li><p><BiLinkAlt />  Link</p></li>
-          <li><p><BiBuildings />  company</p></li>
+          <li><p><BiBuildings />  Company</p></li>
         </ul>
       </Info>
+      <div></div>
     </Div>
   )
 }

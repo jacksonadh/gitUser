@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-const Body = styled.body`
+const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  background: ${props => props.theme.backgroundPrimary};
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 `;
 
-export default Body;
+export default Main;

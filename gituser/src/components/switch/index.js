@@ -1,4 +1,4 @@
-import { useThemeContext } from "../../provider/themeContext";
+import { useThemeContext } from "../../hooks/themeHook";
 import Slider from "./style";
 import { BiSun, BiMoon } from 'react-icons/bi'
 
