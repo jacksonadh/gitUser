@@ -1,45 +1,63 @@
 import Div from './style';
-import Imag from '../../components/img';
-
 import { Info, Subtitle } from '../../styles/style'
+
+import Imag from '../../components/img';
 
 import { BiMap, BiLinkAlt, BiBuildings } from "react-icons/bi";
 import { FiTwitter } from "react-icons/fi"
 
+import useGithub from '../../hooks/gitHook'
+import Moment from 'react-moment';
+
 export default function Profile() {
+
+  const { githubState } = useGithub();
+
   return (
     <Div>
-      <Imag />
+      <Imag src={githubState.user.avatar} />
       <Info className="profile">
-        <Subtitle>The Octocat</Subtitle>
-        <p className="join">Joined 25 Jan 2021</p>
+        <Subtitle>{githubState.user.name}</Subtitle>
+        <p
+          className="join">
+          Joined
+          {githubState.user.created_at}
+
+        </p>
       </Info>
       <Info className="bio">
-        <a href='#'>@octocat</a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste labore, esse vero pariatu</p>
+        <a
+          href={githubState.user.html_url}
+          target="_blank"
+          rel="noreferrer">
+          {githubState.user.login}
+        </a>
+        <p>{githubState.user.bio}</p>
       </Info>
       <Info className="counter">
         <span>
           <p>Repos</p>
-          <Subtitle>8</Subtitle>
+          <Subtitle>{githubState.user.public_repos}</Subtitle>
         </span>
 
         <span>
           <p>Followers</p>
-          <Subtitle>3938</Subtitle>
+          <Subtitle>{githubState.user.followers}</Subtitle>
         </span>
 
         <span>
           <p>Following</p>
-          <Subtitle>9</Subtitle>
+          <Subtitle>{githubState.user.following}</Subtitle>
         </span>
       </Info>
       <Info className="data">
         <ul>
-          <li><p><BiMap />  Location</p></li>
-          <li><p><FiTwitter />  Twitter</p></li>
-          <li><p><BiLinkAlt />  Link</p></li>
-          <li><p><BiBuildings />  Company</p></li>
+          <li><p><BiMap />  {githubState.user.location || "Not available"}</p></li>
+          <li><p><FiTwitter />  {githubState.user.twitter_username || "Not available"}</p></li>
+          <li><p><BiLinkAlt />  <a href={githubState.user.blog} target="_blank" rel="noreferrer">
+            {githubState.user.blog || "Not available"}
+          </a></p></li>
+          <li><p><BiBuildings />  {githubState.user.company || "Not available"}</p></li>
         </ul>
       </Info>
       <div></div>
