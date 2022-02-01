@@ -2,6 +2,7 @@ import Div from './style';
 import { Info, Subtitle } from '../../styles/style'
 
 import Imag from '../../components/img';
+import Avatar from '../../assets/githubAvatar.jpg'
 
 import { BiMap, BiLinkAlt, BiBuildings } from "react-icons/bi";
 import { FiTwitter } from "react-icons/fi"
@@ -15,14 +16,15 @@ export default function Profile() {
 
   return (
     <Div>
-      <Imag src={githubState.user.avatar} />
+      <Imag src={githubState.user.avatar || Avatar} />
       <Info className="profile">
-        <Subtitle>{githubState.user.name}</Subtitle>
+        <Subtitle>{githubState.user.name || "Search for a user"}</Subtitle>
         <p
           className="join">
           Joined
-          {githubState.user.created_at}
-
+          <Moment format=" DD MMM YYYY">
+            {githubState.user.created_at}
+          </Moment>
         </p>
       </Info>
       <Info className="bio">
@@ -37,17 +39,17 @@ export default function Profile() {
       <Info className="counter">
         <span>
           <p>Repos</p>
-          <Subtitle>{githubState.user.public_repos}</Subtitle>
+          <Subtitle>{githubState.user.public_repos || 0}</Subtitle>
         </span>
 
         <span>
           <p>Followers</p>
-          <Subtitle>{githubState.user.followers}</Subtitle>
+          <Subtitle>{githubState.user.followers || 0}</Subtitle>
         </span>
 
         <span>
           <p>Following</p>
-          <Subtitle>{githubState.user.following}</Subtitle>
+          <Subtitle>{githubState.user.following || 0}</Subtitle>
         </span>
       </Info>
       <Info className="data">

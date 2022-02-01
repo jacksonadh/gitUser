@@ -1,10 +1,12 @@
 import CardRepo from "./style";
 
-export default function RepositoryItem(name, linkToRepo, fullName) {
+export default function RepositoryItem(props) {
   return (
     <CardRepo>
-      <h2>{name}</h2>
-      <a href={linkToRepo} target="_blank" rel="noreferrer">{fullName}</a>
+      <article>
+        <h2>{props.name}</h2>
+        <a href={props.linkToRepo} target="_blank" rel="noreferrer">{props.fullName}</a>
+      </article>
     </CardRepo>
   )
 }

@@ -49,13 +49,8 @@ ul li{
 }
 
 .rdTab:checked ~ .tabContent{
-	display: block;
-}
-
-article{
-
-	padding: 10px;
-	color: ${props => props.theme.fontSubtitle};;
+	display: flex;
+  flex-wrap: wrap;
 }
 `;
 

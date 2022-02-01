@@ -29,32 +29,28 @@ export default function TabContent() {
               <input type="radio" id="tab1" className="rdTab" name="tabs" checked />
               <label for="tab1" className="tabLabel">Repo</label>
               <div className="tabContent">
-                <article>
-                  {githubState.repositories.map((item) => (
-                    <RepositoryItem
-                      key={item.id}
-                      name={item.name}
-                      linkToRepo={item.full_name}
-                      fullName={item.full_name}
-                    />
-                  ))}
-                </article>
+                {githubState.repositories.map((item) => (
+                  <RepositoryItem
+                    key={item.id}
+                    name={item.name}
+                    linkToRepo={item.full_name}
+                    fullName={item.full_name}
+                  />
+                ))}
               </div>
             </li>
             <li>
               <input type="radio" name="tabs" className="rdTab" id="tab2" />
               <label for="tab2" className="tabLabel">Starred</label>
               <div className="tabContent">
-                <article>
-                  {githubState.starred.map((item) => (
-                    <RepositoryItem
-                      key={item.id}
-                      name={item.name}
-                      linkToRepo={item.full_name}
-                      fullName={item.full_name}
-                    />
-                  ))}
-                </article>
+                {githubState.starred.map((item) => (
+                  <RepositoryItem
+                    key={item.id}
+                    name={item.name}
+                    linkToRepo={item.full_name}
+                    fullName={item.full_name}
+                  />
+                ))}
               </div>
             </li>
           </ul>
