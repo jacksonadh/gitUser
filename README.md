@@ -1,3 +1,36 @@
+# Devfinder
+
+Desenvolvido durante o bootcamp da Digital Inovation One, o projeto tinha como objetivo criar uma interface componentizada para buscar os dados de uma api do gitHub.
+
+O objetivo foi cumprido com sucesso, utilizei também como modelo de layout o projeto do site frontend mentor que também tem a mesma ideia principal.
+
+Nesse projeto eu aprendi a utilizar o hook useContext, conseguir fazer com que minha aplicação tivesse dois **provider** um para o thema e outro para a API. Onde cada parte **consome** apenas o necessário.
+
+## Telas da aplicação
+
+
+![1643740393481](https://user-images.githubusercontent.com/66038167/152400305-df1be87e-4c2e-4ad5-98c6-bf33a08f8943.jpg)
+![1643740394537](https://user-images.githubusercontent.com/66038167/152400309-2ac392f2-73e0-4c62-bc82-689cf878ca80.jpg)
+![1643740394117](https://user-images.githubusercontent.com/66038167/152400312-5f10ff89-246e-416f-974b-8790aeafcb7e.jpg)
+![1643740393955](https://user-images.githubusercontent.com/66038167/152400314-48196c5e-c35d-4931-b2ee-3689623064b3.jpg)
+
+## Tecnologias utilizadas
+
+- ReactJS
+- React Hooks
+- Styled Components
+- Axios
+- Moment JS
+
+## Desafios enfrentados
+
+Passei muito tempo pesquisando e tentadno enteder como funcionava o useContext, foi nessa busca que aprendi seu funcionamento e para colocar em prática apliquei o useContext na troca de tema por toda a aplicação.
+
+## Agradecimento
+
+Agradecimento especial para o [Matheus Benits](https://github.com/benits) que foi o professor da digital Inovation e que quando tive duvidas me orientou e ajudou a resolver os erros da minha aplicação.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
