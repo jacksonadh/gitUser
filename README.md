@@ -6,6 +6,10 @@ O objetivo foi cumprido com sucesso, utilizei também como modelo de layout o pr
 
 Nesse projeto eu aprendi a utilizar o hook useContext, conseguir fazer com que minha aplicação tivesse dois **provider** um para o thema e outro para a API. Onde cada parte **consome** apenas o necessário.
 
+## Demo
+
+[https://jacksonadh-devfinder.netlify.app/](https://jacksonadh-devfinder.netlify.app/)
+
 ## Telas da aplicação
 
 
